@@ -1,0 +1,29 @@
+{
+  "name": "knfileimporter",
+  "description": "import file in html",
+  "version": "0.0.1",
+  "author": {
+    "name": "wlkkn",
+    "email": "yy122331@163.com"
+  },
+  "keywords": [
+    "node",
+    "static file",
+    "importer"
+  ],
+  "dependencies": {
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.9",
+    "gulp-coverage": "^0.3.31",
+    "gulp-jshint": "^1.8.6",
+    "gulp-mocha": "^1.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wlkkn/knfileimporter.git"
+  },
+  "main": "index",
+  "readmeFilename": "README.md"
+}
