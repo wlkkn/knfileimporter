@@ -43,7 +43,7 @@
 ### 构造函数，返回Importer对象
 
 ```js
-var Importer = require('jtfileimporter');
+var Importer = require('knfileimporter');
 var importer = new Importer();    
 ```
 
@@ -53,7 +53,7 @@ var importer = new Importer();
 ### 静态文件url前缀
 
 ```js
-var Importer = require('jtfileimporter');
+var Importer = require('knfileimporter');
 var importer = new Importer();
 //set
 import.prefix = '/mobile';
@@ -67,7 +67,7 @@ console.dir(importer.prefix);
 ### 静态文件使用的hosts（可以是字符串或者数组）
 
 ```js
-var Importer = require('jtfileimporter');
+var Importer = require('knfileimporter');
 var importer = new Importer();
 // 设置为单个域名
 importer.hosts = 'vicanso.com';
@@ -81,7 +81,7 @@ importer.hosts = ['vicanso.com', 'jenny.com'];
 ### 静态文件的版本号（可以是字符串或者对象）
 
 ```js
-var Importer = require('jtfileimporter');
+var Importer = require('knfileimporter');
 var importer = new Importer();
 // 设置单个版本号（所有静态文件共用）
 importer.version = 'abcd';
@@ -114,7 +114,7 @@ importer.exportCss(); // <link rel="stylesheet" href="/abc/1_123.css" type="text
 ### 开启、禁用debug模式（在debug模式下，不会使用合并的js文件，且可以设置srcPath，用于使用非压缩代码）
 
 ```js
-var Importer = require('jtfileimporter');
+var Importer = require('knfileimporter');
 var importer = new Importer();
 importer.import('/1.js', '/2.js', '/3.js', '/4.js', '//jquery.com/jquery.min.js');
 importer.debug = true;
@@ -131,7 +131,7 @@ importer.exportJs();  //<script type="text/javascript" src="/src/1.js"></script>
 ### 引入静态文件
 
 ```js
-var Importer = require('jtfileimporter');
+var Importer = require('knfileimporter');
 var importer = new Importer();
 importer.import('/a.js');
 importer.import('/b.js', '/c.css');
@@ -144,7 +144,7 @@ importer.import(['/d.js', '/e.css']);
 ### 导出css样式
 
 ```js
-var Importer = require('jtfileimporter');
+var Importer = require('knfileimporter');
 var importer = new Importer();
 importer.import('/a.js');
 importer.import('/b.js', '/c.css');
@@ -159,7 +159,7 @@ importer.exportCss();   //<link rel="stylesheet" href="/c.css" type="text/css" /
 ### 导出js样式
 
 ```js
-var Importer = require('jtfileimporter');
+var Importer = require('knfileimporter');
 var importer = new Importer();
 importer.import('/a.js');
 importer.import('/b.js', '/c.css');
